@@ -38,23 +38,21 @@
 	<div class="account-page">
 		<div class="container">
 			<div class="row">
-				<div class="col-2">
-					<img src="tamrow.png" width="100$">
-				</div>
+				<img src="rick.gif" width="500px">
 				<div class="col-2">
 					<div class="form-container">
 						<div class="form-button">
-							<span onclick="login()">	Đăng nhập	</span>
-							<span onclick="register()">	Đăng ký		</span>
-							<hr id="Indicator">
+							<span onclick="dangnhap()">	Đăng nhập	</span>
+							<span onclick="dangky()">	Đăng ký		</span>
+							<hr id="TamRow">
 						</div>
-						<form id="LoginForm">
+						<form id="DangNhapForm">
 							<input type="text" placeholder="Tên người dùng">
 							<input type="password" placeholder="Mật khẩu">
 							<button type="submit" class="button">Đăng nhập</button>
 							<a href="">Quên mật khẩu ?</a>
 						</form>
-						<form id="RegForm">
+						<form id="DangKyForm">
 							<input type="text" placeholder="Tên người dùng">
 							<input type="email" placeholder="Email">
 							<input type="password" placeholder="Mật khẩi">
@@ -109,19 +107,19 @@
 
 	<!-- JavaScript Form Đăng nhập và Đăng ký tài khoản -->
 	<script>
-		var LoginForm 	=document.getElementById	("LoginForm");
-		var RegForm 	= document.getElementById	("RegForm");
-		var Indicator 	= document.getElementById	("Indicator");
+		var Login 	=document.getElementById	("DangNhapForm");
+		var Reg 	= document.getElementById	("DangKyForm");
+		var Tamrow 	= document.getElementById	("TamRow");
 
-			function register(){
-				RegForm.style.transform = "translateX(0px)";
-				LoginForm.style.transform = "translateX(0px"; 
-				Indicator.style.transform = "translateX(100px)"
+			function dangky(){
+				Reg.style.transform = "translateX(0px)";
+				Login.style.transform = "translateX(0px"; 
+				Tamrow.style.transform = "translateX(100px)"
 			}
-			function login(){
-				RegForm.style.transform = "translateX(300px)"
-				LoginForm.style.transform = "translateX(300px)"
-				Indicator.style.transform = "translateX(0px)"
+			function dangnhap(){
+				Reg.style.transform = "translateX(300px)"
+				Login.style.transform = "translateX(300px)"
+				Tamrow.style.transform = "translateX(0px)"
 			}
 	</script>
 </body>

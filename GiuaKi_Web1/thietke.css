@@ -315,16 +315,16 @@
 		form .button:focus{
 			outline: none;
 		}
-		#LoginForm{
+		#DangNhapForm{
 			left: -300px;
 		}
-		#RegForm{
+		#DangKyForm{
 			left: 0;
 		}
 		form a{
 			font-size: 12px;
 		}
-		#Indicator{
+		#TamRow{
 			width: 100px;
 			border: none;
 			background: #ff523b;
